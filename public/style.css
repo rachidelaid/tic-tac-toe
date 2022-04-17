@@ -2,7 +2,9 @@
   --bg-dark: #192a32;
   --bg-light: #1f3540;
   --blue: #2fc3be;
+  --dark-blue: #118c87;
   --yellow: #f2b237;
+  --dark-yellow: #cc8b13;
   --gray: #a8bec9;
   --dark-gray: #6b8997;
   --black: #132732;
@@ -32,22 +34,22 @@ input {
   background-color: var(--black);
   color: var(--gray);
   padding: 0.2rem;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   width: 100%;
   font-size: 1.2rem;
   text-align: center;
 }
 
 button {
-  width: min(80%, 12rem);
+  width: min(80%, 14rem);
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   color: var(--black);
   background-color: var(--gray);
-  box-shadow: 0 4px 0 var(--dark-gray);
+  box-shadow: 0 6px 0 var(--dark-gray);
   transition: all 0.2s ease-in-out;
 }
 
@@ -57,6 +59,16 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+button.blue {
+  background-color: var(--blue);
+  box-shadow: 0 6px 0 var(--dark-blue);
+}
+
+button.yellow {
+  background-color: var(--yellow);
+  box-shadow: 0 6px 0 var(--dark-yellow);
 }
 
 .card {
