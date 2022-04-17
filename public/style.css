@@ -82,10 +82,40 @@ button.yellow {
   gap: 1rem;
 }
 
-.start-screen {
+.row {
+  flex-direction: row;
+}
+
+.screen {
   width: min(30rem, 80%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+
+.start {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.actions .card {
+  padding: 0.6rem;
+  padding-bottom: 0.9rem;
+}
+
+.actions img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
