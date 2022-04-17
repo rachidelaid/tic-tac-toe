@@ -4,6 +4,7 @@
   --blue: #2fc3be;
   --yellow: #f2b237;
   --gray: #a8bec9;
+  --dark-gray: #6b8997;
   --black: #132732;
 }
 
@@ -13,6 +14,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  box-shadow: none;
+  border: none;
 }
 
 body {
@@ -25,9 +28,40 @@ body {
   align-items: center;
 }
 
+input {
+  background-color: var(--black);
+  color: var(--gray);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+button {
+  width: min(80%, 12rem);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--gray);
+  box-shadow: 0 4px 0 var(--dark-gray);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
 .card {
-  background-color: var(--bg-light);
   border-radius: 0.5rem;
+  background-color: var(--bg-light);
   box-shadow: inset 0 -8px 0 var(--black);
   padding: 2rem;
   display: flex;
