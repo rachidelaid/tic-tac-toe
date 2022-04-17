@@ -7,7 +7,7 @@
   --dark-yellow: #cc8b13;
   --gray: #a8bec9;
   --dark-gray: #6b8997;
-  --black: #132732;
+  --black: #10232c;
 }
 
 *,
@@ -71,6 +71,10 @@ button.yellow {
   box-shadow: 0 6px 0 var(--dark-yellow);
 }
 
+.logo {
+  width: 3rem;
+}
+
 .card {
   border-radius: 0.5rem;
   background-color: var(--bg-light);
@@ -105,17 +109,64 @@ button.yellow {
 }
 
 .actions .card {
-  padding: 0.6rem;
+  padding: 0.7rem;
   padding-bottom: 0.9rem;
 }
 
-.actions img {
-  width: 2rem;
-  height: 2rem;
+.actions img:not(.logo) {
+  width: 1rem;
+}
+
+.actions button {
+  box-shadow: inset 0 -4px 0 var(--dark-gray);
+  padding: 0.5rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.grid .card {
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.grid img {
+  width: 3rem;
+}
+
+.grid img:not(.selected) {
+  visibility: hidden;
+}
+
+.grid .card:hover img {
+  visibility: visible;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stats div {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+}
+
+.stats .win {
+  background-color: var(--yellow);
+}
+
+.stats .tie {
+  background-color: var(--gray);
+}
+
+.stats .lose {
+  background-color: var(--blue);
 }
