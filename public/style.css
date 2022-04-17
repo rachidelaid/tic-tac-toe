@@ -1,0 +1,45 @@
+:root {
+  --bg-dark: #192a32;
+  --bg-light: #1f3540;
+  --blue: #2fc3be;
+  --yellow: #f2b237;
+  --gray: #a8bec9;
+  --black: #132732;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--bg-dark);
+  color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--bg-light);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 -8px 0 var(--black);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.start-screen {
+  width: min(30rem, 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
